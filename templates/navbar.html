@@ -1,9 +1,15 @@
 <nav>
-  <ul>
-    <li>
-      <a href="{{url_for('hello')}}">Home</a>  
-    </li>
-    <li>
-      <a href="https://platzi.com", target='_blank '>About</a>
-  </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">          
+          <a class="navbar-brand" href="#"><img src="{{url_for('static',  filename='assets/adidas.png')}}" alt="adidas logo"></a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a href="{{url_for('hello')}}">Home</a>  
+          <a href="https://platzi.com", target='_blank '>About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </nav>
